@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "CedroProject",
+    "slug": "CedroProject",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "CedroProject"
+}
