@@ -1,8 +1,10 @@
 import React from 'react'
 import { ScrollView, Text, View, StyleSheet, Dimensions, KeyboardAvoidingView } from 'react-native'
 
+
 import Questions from './Questions'
 import ProjectHeader from './ProjectHeader'
+import ButtonForm from './Button'
 
 
 const vh=Dimensions.get('window').height/100
@@ -14,7 +16,7 @@ export default () => {
         <>  
             <ScrollView>
                 <ProjectHeader projectName="Novo Projeto" directory="pasta atual"></ProjectHeader>
-
+                
                 <KeyboardAvoidingView style={
                     { flex: 1, flexDirection: 'column',justifyContent: 'center',}}
                     behavior="padding"    keyboardVerticalOffset={0}>
@@ -38,6 +40,7 @@ export default () => {
                     <Questions multi={true} quest="Observações secundárias"/>
                 </KeyboardAvoidingView>
                 
+                <ButtonForm title="Submit"></ButtonForm>
             </ScrollView>
         </>
     )
